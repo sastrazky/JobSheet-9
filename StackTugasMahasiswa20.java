@@ -56,4 +56,17 @@ public class StackTugasMahasiswa20 {
             }
         }
     }
+
+    public Mahasiswa20 lihatTugasTerbawah() {
+        if (!isEmpty()) {
+            return stack[0]; 
+        } else {
+            System.out.println("Stack kosong! Tidak ada tugas pertama.");
+            return null;
+        }
+    }
+
+    public int countTasks() {
+        return top + 1;
+    }
 }
